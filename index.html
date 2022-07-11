@@ -89,15 +89,15 @@
                 <ul class="our-work-list list">
                     <li class="our-work-item"><img src="./images/about-us/img.jpg" alt="Программное-обеспечение"
                             width="370" height="294" />
-                            <p class="our-work-desc">Десктопные приложения</p>
+                        <p class="our-work-desc">Десктопные приложения</p>
                     </li>
                     <li class="our-work-item"><img src="./images/about-us/img(1).jpg" alt="Мобильные-приложения"
                             width="370" height="294" />
-                            <p class="our-work-desc">Мобильные приложения</p>
+                        <p class="our-work-desc">Мобильные приложения</p>
                     </li>
                     <li class="our-work-item"><img src="./images/about-us/img(2).jpg" alt="Дизайнерские-решения"
                             width="370" height="294" />
-                            <p class="our-work-desc">Дизайнерские решения</p>
+                        <p class="our-work-desc">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -389,6 +389,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-subscribe">
+                <p class="footer-social-slogan"><strong>Подпишитесь на рассылку</strong></p>
+                <form name="subscribe-form" autocomplete="on" novalidate>
+                    <label class="subscribe-form">
+                        <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button class="submit-btn-footer" type="submit">Подписаться
+                        <svg class="subscribe-icon-footer" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -396,10 +409,62 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-btn" data-modal-close type="button">
-                <svg class="modal-icon" width="11px" height="11px">
+                <svg class="modal-close-icon" width="11px" height="11px">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
+            <form class="singup-form" name="singup-form" autocomplete="on" novalidate>
+                <div class="form-fild-container">
+                    <span class="form-fild-label">Имя</span>
+                    <label class="form-fild">
+                        <svg class="modal-fild-icon" width="12px" height="12px">
+                            <use href="./images/icons.svg#icon-name"></use>
+                        </svg>
+                        <input type="text" name="user-name" autofocus required>
+                    </label>
+                </div>
+                <div class="form-fild-container">
+                    <span class="form-fild-label">Телефон</span>
+                    <label class="form-fild">
+                        <svg class="modal-fild-icon" width="13px" height="13px">
+                            <use href="./images/icons.svg#icon-tel"></use>
+                        </svg>
+                        <input type="tel" name="user-phone" required>
+                    </label>
+                </div>
+                <div class="form-fild-container">
+                    <span class="form-fild-label">Почта</span>
+                    <label class="form-fild">
+                        <svg class="modal-fild-icon" width="15px" height="12px">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        <input type="email" name="user-email" required>
+                    </label>
+                </div>
+                <div class="form-fild-container">
+                    <span class="form-fild-label">Комментарий</span>
+                    <label class="form-fild-area">
+                        <textarea name="user-massage" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    </label>
+                </div>
+                <div class="form-fild-container">
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="user-agreement" checked>
+                        <span class="form-custom-checkbox">
+                            <svg class="" width="15px" height="12px">
+                                <use href="./images/icons.svg#icon-choose"></use>
+                            </svg></span>
+                    </label>
+
+                    <span class="form-checkbox-lable">Соглашаюсь с рассылкой и принимаю
+                        <a class="" href="#" target="_blank" rel="noopener no-referrer">Условия
+                            договора
+                        </a>
+                    </span>
+                </div>
+                <button class="submit-btn-modal" type="submit">Отправить </button>
+            </form>
         </div>
     </div>
 
