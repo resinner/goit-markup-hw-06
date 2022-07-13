@@ -391,9 +391,10 @@
             </div>
             <div class="footer-subscribe">
                 <p class="footer-social-slogan"><strong>Подпишитесь на рассылку</strong></p>
-                <form name="subscribe-form" autocomplete="on" novalidate>
+                <form name="subscribe-form" autocomplete="on">
                     <label class="subscribe-form">
-                        <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail">
+                        <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail" minlength="5"
+                            required>
                     </label>
                     <button class="submit-btn-footer" type="submit">Подписаться
                         <svg class="subscribe-icon-footer" width="24px" height="24px">
@@ -414,51 +415,54 @@
                 </svg>
             </button>
             <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
-            <form class="singup-form" name="singup-form" autocomplete="on" novalidate>
+            <form class="singup-form" name="singup-form" autocomplete="on">
                 <div class="form-fild-container">
                     <span class="form-fild-label">Имя</span>
                     <label class="form-fild">
+                        <input class="modal-input" type="text" name="user-name" placeholder=" " autofocus minlength="2"
+                            required>
                         <svg class="modal-fild-icon" width="12px" height="12px">
                             <use href="./images/icons.svg#icon-name"></use>
                         </svg>
-                        <input type="text" name="user-name" autofocus required>
                     </label>
                 </div>
                 <div class="form-fild-container">
                     <span class="form-fild-label">Телефон</span>
                     <label class="form-fild">
-                        <svg class="modal-fild-icon" width="13px" height="13px">
+                        <input type="tel" name="user-phone" placeholder=" " minlength="10" pattern="[0-9]{10}" required>
+                        <svg class="modal-fild-icon" width="14px" height="14px">
                             <use href="./images/icons.svg#icon-tel"></use>
                         </svg>
-                        <input type="tel" name="user-phone" required>
                     </label>
                 </div>
                 <div class="form-fild-container">
                     <span class="form-fild-label">Почта</span>
                     <label class="form-fild">
-                        <svg class="modal-fild-icon" width="15px" height="12px">
+                        <input class="" type="email" name="user-email" placeholder=" " minlength="2" required>
+                        <svg class="modal-fild-icon" width="19px" height="16px">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
-                        <input type="email" name="user-email" required>
                     </label>
                 </div>
                 <div class="form-fild-container">
                     <span class="form-fild-label">Комментарий</span>
                     <label class="form-fild-area">
-                        <textarea name="user-massage" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                        <textarea name="user-massage" id="" cols="30" rows="10" placeholder="Введите текст"
+                            minlength="10" required></textarea>
                     </label>
                 </div>
                 <div class="form-fild-container">
                     <label class="form-checkbox">
-                        <input type="checkbox" name="user-agreement" checked>
+                        <input type="checkbox" name="user-agreement" required>
                         <span class="form-custom-checkbox">
                             <svg class="" width="15px" height="12px">
                                 <use href="./images/icons.svg#icon-choose"></use>
-                            </svg></span>
+                            </svg>
+                        </span>
                     </label>
 
                     <span class="form-checkbox-lable">Соглашаюсь с рассылкой и принимаю
-                        <a class="" href="#" target="_blank" rel="noopener no-referrer">Условия
+                        <a class="submit-check-agree" href="#" target="_blank" rel="noopener no-referrer">Условия
                             договора
                         </a>
                     </span>
