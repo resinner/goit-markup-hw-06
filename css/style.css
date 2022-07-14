@@ -24,7 +24,7 @@ body {
 
 /* Кастомный скролбар */
 html::-webkit-scrollbar {
-  /* display: none; */
+  display: none;
   width: 20px; /* ширина для вертикального скролла */
   height: 8px; /* высота для горизонтального скролла */
   background-color: transparent;
@@ -765,21 +765,21 @@ li.nav-link:not(:last-child) {
   position: relative;
 }
 
-.form-fild-container:not(:last-of-type) {
+.form-field-container:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
-.form-fild-container:nth-last-child(3) {
+.form-field-container:nth-last-child(3) {
   margin-bottom: 20px;
 }
 
-.form-fild-container:last-of-type {
+.form-field-container:last-of-type {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.form-fild-label {
+.form-field-label {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -791,20 +791,20 @@ li.nav-link:not(:last-child) {
   margin-bottom: 4px;
 }
 
-.form-fild,
-.form-fild-area {
+.form-field,
+.form-field-area {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.form-fild {
+.form-field {
   position: relative;
   max-height: 40px;
 }
 
-.form-fild input,
-.form-fild-area textarea {
+.form-field input,
+.form-field-area textarea {
   width: inherit;
   height: inherit;
   min-height: 40px;
@@ -814,13 +814,13 @@ li.nav-link:not(:last-child) {
   transition: border-color var(--anim1);
 }
 
-.form-fild input {
+.form-field input {
   padding: 12px 8px 12px 42px;
   width: 100%;
   outline: none;
 }
 
-.form-fild-area textarea {
+.form-field-area textarea {
   width: 100%;
   max-height: 120px;
   padding: 12px 16px;
@@ -828,21 +828,21 @@ li.nav-link:not(:last-child) {
   outline: none;
 }
 
-.form-fild input:hover,
-.form-fild input:focus-within,
-.form-fild input:not(:placeholder-shown),
-.form-fild-area textarea:hover,
-.form-fild-area textarea:focus-within,
-.form-fild-area textarea:not(:placeholder-shown) {
+.form-field input:hover,
+.form-field input:focus-within,
+.form-field input:not(:placeholder-shown),
+.form-field-area textarea:hover,
+.form-field-area textarea:focus-within,
+.form-field-area textarea:not(:placeholder-shown) {
   border-color: var(--dark-accent);
 }
 
-.form-fild input:not(:placeholder-shown):invalid,
-.form-fild-area textarea:not(:placeholder-shown):invalid {
+.form-field input:not(:placeholder-shown):invalid,
+.form-field-area textarea:not(:placeholder-shown):invalid {
   border-color: var(--error);
 }
 
-.form-fild svg {
+.form-field svg {
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
@@ -850,9 +850,9 @@ li.nav-link:not(:last-child) {
   transition: fill var(--anim1);
 }
 
-.form-fild:hover svg,
-.form-fild:focus-within svg,
-.form-fild input:not(:placeholder-shown) + svg {
+.form-field:hover svg,
+.form-field:focus-within svg,
+.form-field input:not(:placeholder-shown) + svg {
   fill: var(--dark-accent);
 }
 
